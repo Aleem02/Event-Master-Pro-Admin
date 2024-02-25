@@ -13,7 +13,7 @@ const Event = ({ item, id }) => {
         <img src={item.imgUrl} alt="image" width={330} height={200} />
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
           <p className="category" style={{backgroundColor:'lightgray',color:'black',fontSize:'12px',fontWeight:"light"}}>{item.category}</p>
-          {format > item.date ? <p style={{marginRight:'5px',backgroundColor:'red',color:'white'}}>Event Ended</p> : null}
+          {format < item.date ? <p style={{marginRight:'5px',backgroundColor:'red',color:'white'}}>Event Ended</p> : null}
         </div>
         <h1>{item.title}</h1>
         <p>
