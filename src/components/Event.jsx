@@ -5,7 +5,7 @@ const Event = ({ item, id }) => {
   const date = new Date()
   const format = `${date.getFullYear()}-${
     date.getMonth() < 10 ? "0" : null
-  }${date.getMonth()}-${date.getDate()}`;
+  }${date.getMonth()+1}-${date.getDate()}`;
   console.log(format)
   return (
     <Link to={`/${id}`} style={{ textDecoration: "none" }}>
