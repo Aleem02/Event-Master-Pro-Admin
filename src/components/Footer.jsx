@@ -11,7 +11,7 @@ const Footer = () => {
         color: "white",
         fontWeight: "bold",
         zIndex: "99",
-        width: "98.5%",
+        width: "inherit",
         position: "static",
         left:'0',
         bottom:'0'
